@@ -5,6 +5,9 @@ const theme = extendTheme({
     fonts: {
         rubik: `Rubik, sans-serif`,
     },
+    sizes: {
+        workSpace: "1270px",
+    },
 });
 
 export default theme;

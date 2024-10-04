@@ -1,9 +1,9 @@
-import { Sepolia } from "@usedapp/core";
+import { Hardhat } from "@usedapp/core";
 
 const usedappConfig = {
-    readOnlyChainId: Sepolia.chainId,
+    readOnlyChainId: Hardhat.chainId,
     readOnlyUrls: {
-        [Sepolia.chainId]: import.meta.env.VITE_SEPOLIA_RPC_URL,
+        [Hardhat.chainId]: Hardhat.rpcUrl,
     },
 };
 
