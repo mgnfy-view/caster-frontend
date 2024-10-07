@@ -1,11 +1,10 @@
 import { Button } from "@chakra-ui/react";
 
-export default function PrimaryButton({ text, clickAction }) {
+export default function SecondaryButton({ text, clickAction }) {
     return (
         <Button
-            bgColor="gray.800"
-            color="white"
-            borderRadius={100}
+            bgColor="white"
+            color="gray.800"
             padding={4}
             onClick={clickAction}
             _hover={{

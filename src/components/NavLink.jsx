@@ -8,15 +8,14 @@ export default function NavLink({ text, linkTo }) {
         <ChakraLink
             as={ReactRouterLink}
             to={linkTo}
-            fontSize="lg"
-            fontWeight={400}
-            marginRight={4}
-            paddingInline={3}
-            paddingBlock={1}
             color={pathname === linkTo ? "pink.500" : "gray.800"}
+            fontSize="lg"
+            marginRight={2}
+            paddingInline={4}
+            paddingBlock={1}
             _hover={{
                 background: "#F4EEEE",
-                borderRadius: "50px",
+                borderRadius: "100px",
             }}
         >
             {text}

@@ -1,6 +1,7 @@
 import { useEthers } from "@usedapp/core";
 
 import PrimaryButton from "./PrimaryButton";
+import SecondaryButton from "./SecondaryButton";
 
 export default function ConnectOrDisconnectButton({ cue }) {
     const { activateBrowserWallet, deactivate } = useEthers();
@@ -8,6 +9,6 @@ export default function ConnectOrDisconnectButton({ cue }) {
     return cue === "connect" ? (
         <PrimaryButton text="CONNECT" clickAction={activateBrowserWallet} />
     ) : (
-        <PrimaryButton text="DISCONNECT" clickAction={deactivate} />
+        <SecondaryButton text="DISCONNECT" clickAction={deactivate} />
     );
 }
